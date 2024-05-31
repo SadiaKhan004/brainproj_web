@@ -455,11 +455,12 @@ button {
 }
 
 /* Responsive Styles */
+/* Responsive Styles */
 @media (max-width: 800px) {
     .introduction,
     .text {
         width: 90%;
-        margin-left: 5%;
+        margin: 10px auto; /* Center the content horizontally */
     }
 
     .navigation ul {
@@ -469,7 +470,7 @@ button {
 
     .navigation ul li {
         display: inline-block;
-        margin: 10px 5px; /* Adjust margin for spacing between items */
+        margin: 10px; /* Adjust margin for spacing between items */
     }
 
     .navigation p {
@@ -486,7 +487,8 @@ button {
     .moretopic1,
     .moretopic2,
     .moretopic3 {
-        width: 80%;
+        width: 90%;
+        max-width: 300px; /* Limit width for smaller devices */
         height: auto;
         margin: 10px auto;
     }
@@ -497,15 +499,14 @@ button {
     }
 
     textarea {
-        width: 80%;
-        left: 10%;
-        top: auto;
+        width: 90%;
+        max-width: 300px; /* Limit width for smaller devices */
+        margin: 10px auto;
     }
 
     .button {
-        left: 50%;
-        transform: translateX(-50%);
-        top: auto;
+        margin: 10px auto;
+        display: block; /* Ensure button is centered */
     }
 }
 
