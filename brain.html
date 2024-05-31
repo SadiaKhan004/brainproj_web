@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background-image: linear-gradient(45deg, #FFFDD0, #FFB6C1);
+            margin: 0;
+        }
+
+        .text1 .main img {
+            width: 300px;
+            position: absolute;
+            left: 55%;
+            top: 35%;
+        }
+
+        .l1,
+        .l2,
+        .l3,
+        .l4,
+        .l5,
+        .l6 {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            background-color: #95d3f9;
+            border-radius: 5px;
+            padding: 5px;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .l1 {
+            color: palevioletred;
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            animation: textanimation 10s ease forwards;
+            animation-delay: 1.5s;
+        }
+
+        .l2 {
+            color: rgba(216, 112, 147, 0.749);
+            position: absolute;
+            top: 30%;
+            left: 75%;
+            animation: textanimation 10s ease forwards;
+            animation-delay: 3s;
+        }
+
+        .l3 {
+            color: rgb(145, 124, 131);
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            animation: textanimation 10s ease forwards;
+            animation-delay: 4.5s;
+        }
+
+        .l4 {
+            color: palevioletred;
+            position: absolute;
+            top: 65%;
+            left: 78%;
+            animation: textanimation 10s ease forwards;
+            animation-delay: 6s;
+        }
+
+        .l5 {
+            color: rgb(244, 213, 17);
+            position: absolute;
+            top: 65%;
+            left: 45%;
+            animation: textanimation 10s ease forwards;
+            animation-delay: 7.5s;
+        }
+
+        .l6 {
+            color: rgb(245, 148, 180);
+            position: absolute;
+            top: 80%;
+            left: 65%;
+            animation: textanimation 10s ease forwards;
+            animation-delay: 9s;
+        }
+
+        @keyframes textanimation {
+            0% {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            50% {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            100% {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .header {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .introduction {
+            width: 500px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            margin-top: 5px;
+            margin-left: 20px;
+            line-height: 20px;
+        }
+
+        label.text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        label.text img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        label.text p {
+            margin: 0;
+        }
+
+        .text {
+            background-color: #95d5fc;
+            width: 500px;
+            padding: 10px;
+            margin: 10px;
+            visibility: hidden;
+        }
+
+        .text img {
+            width: 2cm;
+        }
+
+        .text1 label {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .text1 label img {
+            margin-right: 10px;
+        }
+
+        .text1 img {
+            width: 30px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .text {
+            display: inline-block;
+        }
+
+        #one,
+        #two,
+        #three,
+        #four,
+        #five,
+        #six {
+            animation: text 10s ease forwards;
+        }
+
+        #one {
+            animation-delay: 1.5s;
+
+        }
+
+        #two {
+            animation-delay: 3s;
+
+        }
+
+        #three {
+            animation-delay: 4.5s;
+
+        }
+
+        #four {
+            animation-delay: 6s;
+
+        }
+
+        #five {
+            animation-delay: 7.5s;
+        }
+
+        #six {
+            animation-delay: 9s;
+        }
+
+        @keyframes text {
+            0% {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            50% {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            100% {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .navigation {
+            margin: 0;
+            background-color: lightblue;
+            padding: 3px;
+        }
+
+        .navigation ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 50px 0 50px;
+            position: relative;
+            left: 20%;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .navigation p {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            position: absolute;
+            top: 2%;
+            margin-left: 20px;
+            font-size: 20px;
+            background-color: rgb(252, 225, 192);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer {
+            border: 5px solid #f1b2bc;
+            width: 97.6%;
+            background-color: #FFFDD0;
+            border-radius: 40px 40px 0 0;
+            padding: 10px;
+            margin-top: 50px;
+            height: 240px;
+        }
+
+        .footer li {
+            display: block;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        .footer li a {
+            text-decoration: none;
+            color: #f59fac;
+            font-weight: bold;
+        }
+
+        .footer li a:hover {
+            color: #95d3f9;
+
+        }
+
+        table {
+            margin-left: 790px;
+            width: 50px;
+            margin-right: 20px;
+            border-collapse: collapse;
+            
+        }
+
+        table tr td {
+            padding-top: 30px;
+            padding-left: 50px;
+            
+        }
+
+        .footer-content {
+            position: absolute;
+            left: 10%;
+            top: 202%;
+            background-color: #d4ecfa;
+            border-radius: 20px;
+            box-shadow: 0px 0px 12px #f1b2bc;
+        }
+
+        .social {
+            text-align: center;
+            color: #FFB6C1;
+            padding: 10px;
+        }
+
+        .footer-content .social a {
+            font-size: 40px;
+            color: #f4bfc7;
+            width: 47px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            text-align: center;
+            border-radius: 10px;
+            margin: 0 8px 10px;
+            box-shadow: 0px 0px 12px #f1b2bc;
+            background-color: white;
+
+        }
+
+        .bx {
+            font-family: 'Boxicons';
+            font-weight: normal;
+            font-style: normal;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0;
+            margin: 0;
+        }
+
+        .moretopic1,
+        .moretopic2,
+        .moretopic3 {
+            font-family: "Roboto", sans-serif;
+            background-color: #b8e0f8;
+            color: black;
+            box-sizing: content-box;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            padding: 3px;
+            border-radius: 10px;
+            font-size: 20px;
+            line-height: 1cm;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+        }
+
+        .moretopic1 {
+            margin-top: 160px;
+            margin-left: 70px;
+
+        }
+
+        .moretopic1 p {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(20%);
+        }
+
+        .moretopic1 img {
+            left: 0;
+            right: 0;
+            width: 4cm;
+            top: 0;
+            transform: translateY(-10%);
+        }
+
+        .moretopic2 {
+            margin-top: -305px;
+            margin-left: 460px;
+        }
+
+        .moretopic2 p {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(-1%);
+        }
+
+        .moretopic2 img {
+            left: 0;
+            right: 0;
+            width: 4cm;
+            top: 0;
+            transform: translateY(-1%);
+        }
+
+        .moretopic3 {
+            margin-top: -305px;
+            margin-left: 870px;
+
+        }
+
+        .moretopic3 p {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(-1%);
+        }
+
+        .moretopic3 img {
+            left: 0;
+            right: 0;
+            width: 4cm;
+            top: 0;
+            transform: translateY(-1%);
+        }
+
+        .moretopic1 a,
+        .moretopic2 a,
+        .moretopic3 a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        textarea {
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            background-color: #f4bfc7;
+            color: #FFFDD0;
+            box-shadow: 0 0 20px #d4ecfa;
+            border-radius: 10px;
+            position: absolute;
+            top: 210%;
+            left: 34%;
+
+        }
+
+        .button {
+            position: absolute;
+            top: 225%;
+            left: 44%
+        }
+
+        button {
+            width: 70px;
+            height: 40px;
+            font-size: 16px;
+            background-color: #d4ecfa;
+            border: none;
+            border-radius: 10px;
+            color: #f4bfc7;
+            font-weight: bold;
+        }
+
+        .moretopic h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 35px;
+            position: absolute;
+            top: 120%;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <p>Anatomy Hub</p>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="text1">
+        <div class="main"><img src="Human_brain_parts .png" alt="brain"></div>
+        <label class="l1"><img src="idea.png">Frontal Lobe</label>
+        <label class="l2"><img src="point.png" alt="">Parietal Lobe</label>
+        <label class="l3"><img src="eye-care.png" alt="">Ociepital Lobe</label>
+        <label class="l4"><img src="people.png" alt="">Cerebellum</label>
+        <label class="l5"><img src="textbook.png" alt="">Temporal Lobe</label>
+        <label class="l6"><img src="heart-attack.png" alt="">Brainstem</label>
+    </div>
+    <!-- </div> -->
+    <h2 class="header">Brain Anatomy</h2>
+    <p class="introduction">The brain, housed in the skull, governs human life, from movement to thought. Its neural
+        network shapes our thoughts and actions, revealing the wonders of cognition and consciousness.</p>
+    <label class="text" id="one">
+        <img src="idea.png" alt="">
+        <p> Control of voluntary movement, involved in attention, short term memory tasks, motivation, planning, speech
+        </p>
+    </label>
+    <label class="text" id="two">
+        <img src="point.png" alt="">
+        <p>Integrates proprioceptive and mechanoceptive stimuli, involved in language processing</p>
+    </label>
+    <label class="text" id="three">
+        <img src="textbook.png" alt="">
+        <p>Decoding sensory input (visual and auditory) into derived meanings for retention of visual memory and
+            language comprehension</p>
+    </label>
+    <label class="text" id="four">
+        <img src="eye-care.png" alt="">
+        <p>Center for visual processing. It is associated with visuospatial processing, distance and depth perception,
+            color determination, object and face recognition, and memory formation.</p>
+    </label>
+    <label class="text" id="five">
+        <img src="people.png" alt="" id="five">
+        <p> responsible for coordinating movement and balance. Also known as the “little brain,” it plays a vital role
+            in language and attention and can assist people with vision and eye movement</p>
+
+    </label>
+    <label class="text" id="six">
+        <img src="heart-attack.png" alt="">
+        <p>responsible for many vital functions of life, such as breathing, consciousness, blood pressure, heart rate,
+            and sleep.</p>
+    </label>
+
+    <div class="moretopic">
+        <h2>Related Topics</h2>
+    </div>
+    <div class="moretopic1">
+        <a href="#"><img src="heart.png" alt="">
+            <p>Heart Anatomy</p>
+        </a>
+    </div>
+    <div class="moretopic2">
+        <a href="#"><img src="human-ribs.png" alt="">
+            <p>Skeletal Anatomy</p>
+        </a>
+    </div>
+    <div class="moretopic3">
+        <a href="#">
+            <img src="lung.png" alt="">
+            <p>Respiratory System Anatomy</p>
+        </a>
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <td>
+                    <li><a href="#">Articles</a></li>
+                </td>
+                <td>
+                    <li><a href="#">Disclaimers</a></li>
+                </td>
+            </tr>
+
+            </tr>
+            <tr>
+                <td>
+                    <li><a href="#">Catagories</a></li>
+                </td>
+                <td>
+                    <li><a href="#">Terms</a></li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li><a href="#">Research</a></li>
+                </td>
+                <td>
+                    <li><a href="#">Privacy</a></li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li><a href="#">Presentations</a></li>
+                </td>
+                <td>
+                    <li><a href="#">Cookies</a></li>
+                </td>
+            </tr>
+            </tr>
+        </table>
+        <div class="footer-content">
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div class="Email"><textarea name="gmail" id="" cols="30" rows="10"
+                placeholder="provide email for more updates"></textarea></div>
+        <div class="button"><button>Send</button></div>
+
+
+    </div>
+
+</body>
+
+</html>
